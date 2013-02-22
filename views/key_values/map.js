@@ -1,8 +1,7 @@
 function (doc) {
-      var keys = [];
       if(doc.type == 'bbolo_position_map'){
 	  for (var key in doc) {
-	      emit(key, doc[key]);        
+	      emit( [key, doc[key]] , 1);        
 	  }
       }
     }
